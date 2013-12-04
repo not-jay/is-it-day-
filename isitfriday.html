@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+  <head>
+    <title>Is it Friday?</title>
+    <style type="text/css">
+      body {
+        color: #000;
+        background-color: #fff;
+        font-family: 'Trebuchet MS', Verdana, Helvetica, Arial, sans-serif;
+      }
+      h1 {
+        text-align: center;
+        font-weight: normal;
+        font-size: 12em;
+      }
+      .yes {
+        color: #080;
+      }
+      .no {
+        color: #f00;
+      }
+      .maybe {
+        color: #000;
+      }
+    </style>
+    <script type="text/javascript">
+      /* <![CDATA[ */
+      var today = new Date(); var wkday = today.getDay();
+      function friday() {
+        if (wkday == 5) {
+          document.write('<h1 class="yes">YES</h1>');
+        }
+        else {
+          document.write('<h1 class="no">NO</h1>');
+        }
+      }
+      function checkday() {
+        var newtoday = new Date(); var newwkday = newtoday.getDay();
+        if (wkday == 4 && newwkday == 5) { location.reload(); }
+        if (wkday == 5 && newwkday == 6) { location.reload(); }
+      }
+      setInterval('checkday()', 1000);
+      /* ]]> */
+    </script>
+    <script type="text/javascript">
+      /* <![CDATA[ */
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-71696-9']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+      /* ]]> */
+    </script>
+    <meta property="fb:admins" content="3500652" />
+  </head>
+  <body>
+    <script type="text/javascript">
+      /* <![CDATA[ */
+      friday();
+      /* ]]> */
+    </script>
+    <noscript>
+      <h1 class="maybe">MAYBE</h1>
+    </noscript>
+  </body>
+</html>
+
