@@ -31,18 +31,18 @@
         if (wkday == 1) {
           document.write('<h1 class="maybe">MONDAY</h1>');
         } else if (wkday == 2) {
-		  document.write('<h1 class="maybe">TUESDAY</h1>');
-		} else if (wkday == 3) {
-		  document.write('<h1 class="maybe">WEDNESDAY</h1>');
-		} else if (wkday == 4) {
-		  document.write('<h1 class="maybe">THURSDAY</h1>');
-		} else if (wkday == 5) {
-		  document.write('<h1 class="maybe">FRIDAY</h1>');
-		} else if (wkday == 6) {
-		  document.write('<h1 class="maybe">SATURDAY</h1>');
-		} else if (wkday == 7) {
-		  document.write('<h1 class="maybe">SUNDAY</h1>');
-		}
+          document.write('<h1 class="maybe">TUESDAY</h1>');
+        } else if (wkday == 3) {
+          document.write('<h1 class="maybe">WEDNESDAY</h1>');
+        } else if (wkday == 4) {
+          document.write('<h1 class="maybe">THURSDAY</h1>');
+        } else if (wkday == 5) {
+          document.write('<h1 class="maybe">FRIDAY</h1>');
+        } else if (wkday == 6) {
+          document.write('<h1 class="maybe">SATURDAY</h1>');
+        } else if (wkday == 0) {
+          document.write('<h1 class="maybe">SUNDAY</h1>');
+        }
       }
       function checkday() {
         var newtoday = new Date(); var newwkday = newtoday.getDay();
