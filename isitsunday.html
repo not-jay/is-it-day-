@@ -27,13 +27,8 @@
     <script type="text/javascript">
       /* <![CDATA[ */
       var today = new Date(); var wkday = today.getDay();
-<<<<<<< HEAD
-      function friday() {
+      function saturday() {
         if (wkday == 0) {
-=======
-      function sunday() {
-        if (wkday == 7) {
->>>>>>> 17709fe62c685de88f60ab40a40f39684febd087
           document.write('<h1 class="yes">YES</h1>');
         }
         else {
@@ -42,8 +37,8 @@
       }
       function checkday() {
         var newtoday = new Date(); var newwkday = newtoday.getDay();
-        if (wkday == 6 && newwkday == 7) { location.reload(); }
-        if (wkday == 7 && newwkday == 1) { location.reload(); }
+        if (wkday == 6 && newwkday == 0) { location.reload(); }
+        if (wkday == 0 && newwkday == 1) { location.reload(); }
       }
       setInterval('checkday()', 1000);
       /* ]]> */
@@ -65,7 +60,7 @@
   <body>
     <script type="text/javascript">
       /* <![CDATA[ */
-      sunday();
+      saturday();
       /* ]]> */
     </script>
     <noscript>
